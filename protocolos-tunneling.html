@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Redes</title>
+    <link rel="stylesheet" href="build/css/app.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="contenedor contenido-header">
+        <div class="barra">
+          <div class="derecha">
+            <nav class="navegacion">
+              <a href="index.html">Inicio</a>
+
+              <a href="nosotros.html">Nosotros</a>
+              <a href="blog.html">Blog</a>
+            </nav>
+          </div>
+        </div>
+        <!--.barra-->
+      </div>
+    </header>
+
+    <main class="contenedor seccion contenido-centrado">
+      <h1>Tipos de protocolos de tunneling</h1>
+
+
+      <div class="resumen-propiedad">
+        <p>Existen varios protocolos utilizados para implementar tunneling, cada uno con
+            características específicas que lo hacen adecuado para diferentes aplicaciones:</p>
+      
+        <ul>
+            <li>
+                <p>Generic Routing Encapsulation (GRE): Es un protocolo de encapsulación
+                    desarrollado por Cisco que permite transmitir datos entre dos puntos a través de un
+                    túnel virtual. A diferencia de otros protocolos de tunneling, GRE no limita el tipo de
+                    protocolo de red que se puede encapsular, permitiendo que muchos protocolos de
+                    capa 3, como IPv4, IPv6, AppleT alk, IPX, etc, se envíen a través de una red IP . Usar
+                    GRE es útil en escenarios donde se necesitan transportar diferentes tipos de tráfico
+                    o interconectar redes con distintos protocolos, creando una especie de "túnel" entre
+                    dispositivos de red. El funcionamiento básico de GRE consiste en encapsular
+                    paquetes de datos dentro de un nuevo paquete IP . El paquete original se envuelve
+                    con un encabezado GRE, que contiene información sobre el origen y el destino del
+                    túnel, permitiendo que el paquete sea correctamente enrutado a través de la red.
+                    Una vez que el paquete encapsulado llega a su destino, se "desencapsula"
+                    , es decir,
+                    se elimina el encabezado GRE y el paquete original se recupera y reenvía a su
+                    destino final.</p>
+            </li>
+            <li>
+                <p>Internet Protocol Security (IPsec): Es un conjunto de protocolos diseñados para
+                    garantizar la seguridad de las comunicaciones IP a través de redes públicas o
+                    privadas. Su objetivo principal es proporcionar confidencialidad, autenticación,
+                    integridad de los datos y protección contra la falsificación. IPsec se utiliza
+                    ampliamente en redes privadas virtuales (VPNs) para asegurar la transmisión de
+                    datos a través de Internet, así como para proteger las comunicaciones entre redes o
+                    entre usuarios remotos y redes corporativas.
+                    El funcionamiento de IPsec se basa en la idea de proteger los datos a nivel de capa
+                    de red (capa 3 del modelo OSI), lo que significa que IPsec trabaja directamente con
+                    los paquetes IP para ofrecer seguridad sin necesidad de modificar las aplicaciones
+                    que generan el tráfico.</p>
+            </li>
+            <li>
+                <p>IP-in-IP: Este se usa para transmitir paquetes de un protocolo IP dentro de otro
+                    paquete IP , lo que permite que el tráfico IP viaje a través de redes que no soportan
+                    directamente el protocolo original o en situaciones donde se necesita ocultar la
+                    información del protocolo de capa superior. En otras palabras, IP-in-IP permite que
+                    un paquete IP , ya sea IPv4 o IPv6, sea encapsulado dentro de otro paquete IP
+                    (típicamente IPv4) para su transmisión a través de una red que solo soporta el
+                    protocolo de encapsulación (como IPv4). Este mecanismo se utiliza principalmente
+                    en escenarios de túneles IP , donde dos redes o dispositivos necesitan comunicarse
+                    de forma segura a través de una infraestructura que no soporta directamente el tipo
+                    de tráfico deseado.</p>
+            </li>
+            <li>
+                <p>Secure Shell (SSH): SSH es un protocolo diseñado principalmente para acceder a
+                    dispositivos remotos de forma segura, pero también permite crear túneles que
+                    redirigen tráfico de otros servicios o aplicaciones a través de la conexión SSH. El
+                    tráfico que pasa por este túnel está cifrado y protegido por los mecanismos de
+                    seguridad de SSH, lo que garantiza su confidencialidad e integridad. Este túnel se
+                    utiliza para proteger la información mientras viaja entre los dos puntos de conexión,
+                    asegurando que los datos no sean interceptados o alterados. Es una herramienta
+                    poderosa para redirigir puertos o acceder de forma segura a servicios internos de
+                    una red.</p>
+            </li>
+            <li>
+                <p>Point-to-Point Tunneling Protocol (PPTP): Es un protocolo de red utilizado para
+                    implementar VPNs, permitiendo la conexión segura entre dos dispositivos a través
+                    de una red pública. PPTP fue desarrollado por Microsoft en colaboración con otros
+                    proveedores de tecnología y es uno de los protocolos de túnel más antiguos en uso.
+                    Su principal función es crear un túnel seguro mediante el encapsulamiento de los
+                    datos enviados entre un cliente y un servidor VPN. Este protocolo permite a los
+                    usuarios establecer conexiones de acceso remoto, de manera que los datos viajan
+                    cifrados y protegidos a través de Internet, tal como si estuvieran en una red privada.
+                    PPTP utiliza el protocolo de encapsulamiento PPP (Point-to-Point Protocol) para
+                    transportar datos y ofrece mecanismos básicos de autenticación y cifrado, como
+                    MS-CHAP (Microsoft Challenge Handshake Authentication Protocol) para verificar la
+                    identidad de los usuarios y RC4 para cifrar los datos.</p>
+            </li>
+            <li>
+                <p>Secure Socket Tunneling Protocol (SSTP): Se usa para crear conexiones VPN
+                    seguras a través de redes no confiables, como Internet. Desarrollado por Microsoft,
+                    SSTP utiliza el puerto TCP 443, el mismo puerto utilizado por el tráfico HTTPS, lo
+                    que le permite atravesar firewalls y proxies que bloquean otros puertos utilizados por
+                    protocolos de VPN tradicionales como PPTP o L2TP . La principal ventaja de SSTP
+                    es su capacidad para evadir restricciones de red, ya que el tráfico se encapsula en el
+                    protocolo HTTPS, lo que facilita el acceso a redes privadas sin ser detectado o
+                    bloqueado por sistemas de seguridad que restringen el tráfico en puertos no
+                    estándar./p>
+            </li>
+            <li>
+                <p>Layer 2 Tunneling Protocol (L2TP): L2TP no proporciona cifrado por sí mismo, sino
+                    que se usa junto con otros protocolos, como IPsec (Internet Protocol Security), para
+                    proporcionar seguridad y cifrado de los datos. Mientras que L2TP se encarga del
+                    encapsulamiento y del establecimiento del túnel entre el cliente y el servidor, IPsec
+                    se encarga de cifrar los datos y asegurar la confidencialidad, autenticación e
+                    integridad de la comunicación. Combina características de PPTP y L2F para
+                    soportar conexiones VPN.</p>
+            </li>
+            <li>
+                <p>Virtual Extensible Local Area Network (VXLAN): Permite la creación de redes
+                    virtuales de capa 2 sobre una infraestructura física de capa 3. VXLAN se utiliza
+                    principalmente en entornos de centros de datos y redes de grandes empresas para
+                    extender redes virtuales entre diferentes ubicaciones y facilitar la movilidad de
+                    máquinas virtuales en entornos de virtualización, especialmente en arquitecturas de
+                    nube o infraestructura como servicio (IaaS).</p>
+            </li>
+        </ul>
+        </div>
+    </main>
+
+    <div class="contenedor contendido-centrado">
+      <nav class="navegacion-paginas">
+        <a href="tunneling.html">1</a>
+        <a href="ventajas-desventajas-tunneling.html">2</a>
+        <a href="funcionamiento-tunneling.html">3</a>
+        <a class="activado" href="protocolos-tunneling.html">4</a>
+      </nav>
+    </div>
+
+    <footer class="footer">
+      <div class="contenedor contenedor-footer">
+          <nav class="navegacion">
+              <a href="index.html">Inicio</a>
+              <a href="nosotros.html">Nosotros</a>
+              <a href="blog.html">Blog</a>
+          </nav>
+      </div>
+
+  </footer>
+
+    <script src="build/js/bundle.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redes</title>
+    <link rel="stylesheet" href="build/css/app.css">
+</head>
+<body>
+    
+    <header class="header">
+        <div class="contenedor contenido-header">
+            <div class="barra">
+
+                <div class="derecha">
+                    <nav class="navegacion">
+                        <a href="index.html">Inicio</a>
+                        <a href="nosotros.html">Nosotros</a>
+                        <a href="blog.html">Blog</a>
+                    </nav>
+                </div>
+                
+            </div> <!--.barra-->
+        </div>
+    </header>
+
+    <main class="contenedor seccion contenido-centrado">
+        <h1>¿Cómo funciona el tunneling?</h1>
+        <div class="resumen-propiedad">
+
+        <p>
+            La técnica de tunneling se basa en la encapsulación de datos, lo que
+            facilita la transmisión segura y eficiente de información entre
+            distintos sistemas. Este método es esencial en la interconexión de
+            redes que utilizan diferentes protocolos, permitiendo que los datos
+            fluyan sin problemas a través de distintas infraestructuras.
+          </p>
+          <p>
+            El funcionamiento del tunneling se puede resumir en varios pasos
+            clave. Primero, un host (A) crea un paquete que contiene la dirección
+            IP del host destino (B) e inserta este paquete IP dentro de un marco
+            Ethernet. Este marco se envía a un router multiprotocolo (M1), que al
+            recibirlo extrae el paquete IP y lo encapsula dentro de un paquete
+            correspondiente a la capa de red WAN. Posteriormente, este paquete es
+            enviado al siguiente router (M2), que realiza un proceso inverso:
+            elimina el paquete WAN y entrega el paquete IP al host B en su formato
+            original. Este proceso permite que los hosts A y B no necesiten
+            interactuar directamente con la red WAN, creando así un "túnel"
+            virtual entre los routers multiprotocolo.
+          </p>
+  
+          <p>
+            La capacidad de encapsular datos es esencial para garantizar que la
+            información viaje sin perder su integridad a través de diferentes
+            redes. La encapsulación no solo permite el transporte de datos, sino
+            que también asegura que la información original permanezca intacta
+            durante su transmisión. La encapsulación es un componente crítico en
+            el proceso de tunneling. Consiste en colocar un paquete dentro de
+            otro, donde el encabezado del primer paquete queda rodeado por la
+            sección de carga útil del segundo paquete. Esta técnica no solo
+            permite que los datos sean transportados a través de diferentes redes,
+            sino que también garantiza que la información original permanezca
+            intacta durante su transmisión.
+          </p>
+          <p>La encapsulación es especialmente útil en situaciones donde los protocolos utilizados por
+            las redes pueden no ser compatibles entre sí. Al encapsular un protocolo dentro de otro, se
+            logra una interoperabilidad que facilita la comunicación entre sistemas diversos. Por
+            ejemplo, si una red utiliza el protocolo A y otra el protocolo B, el tunneling permite que los
+            datos del protocolo A viajen a través de una red diseñada para el protocolo B sin necesidad
+            de modificar su estructura.</p>  
+        </div>
+    </main>
+
+    <div class="contenedor contendido-centrado">
+        <nav class="navegacion-paginas">
+            <a href="tunneling.html">1</a>
+            <a href="ventajas-desventajas-tunneling.html">2</a>
+            <a class="activado" href="funcionamiento-tunneling.html">3</a>
+            <a href="protocolos-tunneling.html">4</a>
+        </nav>
+    </div>
+
+    <footer class="footer">
+        <div class="contenedor contenedor-footer">
+            <nav class="navegacion">
+                <a href="index.html">Inicio</a>
+                <a href="nosotros.html">Nosotros</a>
+                <a href="blog.html">Blog</a>
+            </nav>
+        </div>
+
+    </footer>
+
+    <script src="build/js/bundle.min.js"></script>
+</body>
+</html>

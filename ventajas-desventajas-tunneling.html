@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redes</title>
+    <link rel="stylesheet" href="build/css/app.css">
+</head>
+<body>
+    
+    <header class="header">
+        <div class="contenedor contenido-header">
+            <div class="barra">
+
+                <div class="derecha">
+                    <nav class="navegacion">
+                        <a href="index.html">Inicio</a>
+                        <a href="nosotros.html">Nosotros</a>
+                        <a href="blog.html">Blog</a>
+                    </nav>
+                </div>
+                
+            </div> <!--.barra-->
+        </div>
+    </header>
+
+    <main class="contenedor seccion contenido-centrado">
+        <h1>¿Por qué usar tunneling? (ventajas y desventajas)</h1>
+
+        <div class="resumen-propiedad">
+            <p>El tunneling es útil cuando la dirección IP debe ser alterada para que parezca que el tráfico
+                viene de una dirección diferente, tal como trabaja una VPN. Esto es especialmente
+                importante en escenarios donde se desea ocultar la identidad real del origen del tráfico o
+                cuando se necesita acceder a una red remota de forma segura desde una ubicación
+                externa. En una VPN (Red Privada Virtual), por ejemplo, los paquetes de datos enviados
+                desde un usuario en una red local (por ejemplo, en casa o en una oficina remota) son
+                encapsulados dentro de un paquete diferente, lo que permite que el tráfico pase a través de
+                una red pública (como Internet) de manera segura, como si estuviera viajando por una red
+                privada.</p>
+            <p>El tunneling también se utiliza en la seguridad de una red, ya que al encapsular los datos en
+                otro protocolo ajeno al que trabaja dicha red, se puede mejorar la confidencialidad de la
+                información que se transporta. Esto se logra mediante técnicas como el cifrado, que protege
+                los datos del acceso no autorizado durante su tránsito. Cuando los paquetes se encapsulan
+                en un "túnel" seguro, el tráfico original queda oculto, lo que lo hace menos vulnerable a
+                ataques, como la interceptación o modificación de los datos por parte de actores maliciosos,
+                esta capa extra de seguridad es esencial cuando los datos deben atravesar redes públicas
+                no confiables, como Internet, de este modo, al encapsular los paquetes de datos se crea un
+                “túnel” dentro de la red, a raíz de esto viene su nombre.</p>
+            <p>El "túnel" se refiere al canal protegido que se establece entre el dispositivo de origen y el de
+                destino, donde los datos viajan encapsulados de forma segura. Este "túnel" no es físico,
+                sino lógico, y asegura que, incluso si el tráfico pasa por una red externa o intermedia (como
+                un ISP o incluso Internet), el contenido de los datos permanece privado y no puede ser leído
+                ni alterado fácilmente.
+                A continuación se presenta una tabla de ventajas y desventajas del tunneling en una red.</p>
+            
+                <table border="1">
+                    <thead>
+                        <th>Ventajas</th>
+                        <th>Desventajas</th>
+                    </thead>
+                    
+                <tbody>
+                    <tr align="center">
+                        <td>Menor latencia: Al crear una ruta directa, el
+                            tiempo de latencia suele ser menor.</td>
+                        <td>
+                            Puede aumentar la sobrecarga de la red, es
+                            decir, la cantidad de datos adicionales que
+                            se deben procesar para usar el túnel, por
+                            ejemplo, los datos de encabezado del
+                            encapsulador.
+                        </td>
+                    </tr>
+                    <tr align="center">
+                        <td>Conexión versátil: Ya que en el caso de una
+                            VPN, permite conectar a dos redes al
+                            mismo tiempo, ya que se está conectado a
+                            la red local y se puede acceder también a
+                            una red externa</td>
+                        <td>Puede aumentar la complejidad de la red, si
+                            se tienen varios túneles con diferentes
+                            protocolos, políticas y puntos finales, será
+                            más difícil solucionar problemas del túnel.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <div class="contenedor contendido-centrado">
+        <nav class="navegacion-paginas">
+            <a href="tunneling.html">1</a>
+            <a class="activado" href="ventajas-desventajas-tunneling.html">2</a>
+            <a href="funcionamiento-tunneling.html">3</a>
+            <a href="protocolos-tunneling.html">4</a>
+        </nav>
+    </div>
+
+    <footer class="footer">
+        <div class="contenedor contenedor-footer">
+            <nav class="navegacion">
+                <a href="index.html">Inicio</a>
+                <a href="nosotros.html">Nosotros</a>
+                <a href="blog.html">Blog</a>
+            </nav>
+        </div>
+
+    </footer>
+
+    <script src="build/js/bundle.min.js"></script>
+</body>
+</html>

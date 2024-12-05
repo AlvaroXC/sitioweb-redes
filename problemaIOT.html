@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redes</title>
+    <link rel="stylesheet" href="build/css/app.css">
+</head>
+<body>
+    <header class="header">
+        <div class="contenedor contenido-header">
+           <div class="barra">
+      
+                <nav class="navegacion">
+<a href="index.html">Inicio</a>
+                    <a href="nosotros.html">Nosotros</a>
+                    <a href="blog.html">Blog</a>
+                </nav>
+           </div> <!-- cierre barra -->
+        </div>
+    </header>
+
+    <main class="contenedor seccion contenido-centrado">
+        <h1> Problemas del IoT
+        </h1>
+        <p>Los dispositivos de IoT (y los hosts en general) incrementan a un ritmo apresurado. Según Rashid y Pecorella (2024), los sistemas de Internet de las Cosas (IoT) están a punto de experimentar un crecimiento exponencial, alcanzando miles de millones de dispositivos en la próxima década. Este aumento tan drástico en la cantidad de hosts en internet obligó a cambiar de IPv4 a IPv6, pero IPv6 no está optimizado para redes de IoT, las cuales suelen pertenecer a dispositivos con poco poder de procesamiento, por lo que la gran cantidad de bits en una dirección IPv6 no era lo más eficiente para estos dispositivos. </p>
+        <p>6LoWPAN viene a resolver este problemas. El problema de las IPs se soluciona usando IPv6. Pero, debido a que los dispositivos tienen poco poder de procesamiento, se requería una forma de reducir la cantidad de bits de IP que se requerían para poder transmitir la información. 6LoWPAN lo logra comprimiendo las direcciones IPv6, permitiendo a estos dispositivos comunicarse con direcciones IPv6 con menos bits. Asimismo, logra aumentar la eficiencia a través de mecanismos como neighbor discovery, el cual facilita que hosts en una red se descubran es un conjunto de protocolos que permite a los hosts y routers descubrirse entre sí en una red IPv6 (Watteyne y Thubert, 2015). </p>
+    </main>
+    <div class="contenedor contendido-centrado">
+        <nav class="navegacion-paginas">
+            <a href="internet-of-things.html">1</a>
+            <a class="activado" href="problemaIOT.html">2</a>
+            <a href="arquitecturaIOT.html">3</a>
+            <a href="ejemploIOT.html">4</a>
+            <a href="seguridadIOT.html">5</a>
+        </nav>
+    </div>
+
+    <footer class="footer">
+        <div class="contenedor contenedor-footer">
+            <nav class="navegacion">
+                <a href="index.html">Inicio</a>
+                <a href="nosotros.html">Nosotros</a>
+                <a href="blog.html">Blog</a>
+            </nav>
+        </div>
+
+    </footer>
+
+    <script src="build/js/bundle.min.js"></script>
+</body>
+</html>

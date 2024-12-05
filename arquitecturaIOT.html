@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redes</title>
+    <link rel="stylesheet" href="build/css/app.css">
+</head>
+<body>
+    <header class="header">
+        <div class="contenedor contenido-header">
+           <div class="barra">
+      
+                <nav class="navegacion">
+                    <a href="index.html">Inicio</a>
+                    <a href="nosotros.html">Nosotros</a>
+                    <a href="blog.html">Blog</a>
+                </nav>
+           </div> <!-- cierre barra -->
+        </div>
+    </header>
+
+    <main class="contenedor seccion contenido-centrado">
+        <h1> Problemas del IoT
+        </h1>
+        <p>El internet de las cosas se puede dividir en tres capas principales:</p>
+        <ol>
+            <li> <p>Aplicación</p> </li>
+            <li> <p>Red</p> </li>
+            <li> <p>Dispositivos</p> </li>
+        </ol>
+        <p> Una versión extendida de este esquema se puede observar en la siguiente figura, en donde se muestra que los dispositivos en un sistema de IoT están compuestos de sensores y actuadores, así como también se descompone la capa de red en 2, una gateway que le permite a un dispositivo de IoT enviar sus datos a través de internet, y una capa de integración de IoT, que recibe los datos de los múltiples dispositivos de IoT para luego enviarlos a la aplicación. </p>
+        <img style="width: auto;" src="build/img/arquitectura-IoT.png" alt="">
+        <p>
+            En la capa de dispositivos, tenemos que estos están compuestos de sensores, los cuales les permiten a los dispositivos de IoT realizar mediciones sobre fenómenos en el mundo real. Ejemplos de sensores pueden ser acelerómetros, giroscopios, magnetómetros, LiDAR, sensores de movimiento, etc. Mientras que los actuadores le permiten al dispositivo de IoT realizar acciones en el mundo real. Ejemplos de actuadores pueden ser los mecanismos que permiten a un aire acondicionado cambiar la temperatura de una habitación, o que permiten a una televisión colocar un video en ella. Estos son dispositivos por lo general pequeños que tienen poco poder de procesamiento, muchas veces ni siquiera tienen un sistema operativo. 
+        </p>
+        <p>
+            La capa de red es la que, a través de protocolos de red, es capaz de enviar datos entre dispositivos. En IoT, permite enviar las mediciones de los sensores y enviar instrucciones a los actuadores desde otros dispositivos. Para ello se requieren protocolos como el ya mencionado 6LoWPAN. 
+        </p>
+        <p>
+	        Finalmente, la capa de aplicación es la que consume y procesa los datos recolectados por los múltiples sensores. Esta capa puede tener diferentes implementaciones como por ejemplo un programa que muestre gráficos de los datos que se reciben, o un programa que realice acciones con base en las mediciones de los sensores Dominguez et al. (2022). </p>
+    </main>
+    <div class="contenedor contendido-centrado">
+        <nav class="navegacion-paginas">
+            <a href="internet-of-things.html">1</a>
+            <a href="problemaIOT.html">2</a>
+            <a class="activado"  href="arquitecturaIOT.html">3</a>
+            <a href="ejemploIOT.html">4</a>
+            <a href="seguridadIOT.html">5</a>
+        </nav>
+    </div>
+
+    <footer class="footer">
+        <div class="contenedor contenedor-footer">
+            <nav class="navegacion">
+                <a href="index.html">Inicio</a>
+                <a href="nosotros.html">Nosotros</a>
+                <a href="blog.html">Blog</a>
+            </nav>
+        </div>
+
+    </footer>
+
+    <script src="build/js/bundle.min.js"></script>
+</body>
+</html>

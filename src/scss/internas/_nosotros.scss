@@ -1,0 +1,22 @@
+.nosotros-flex{
+    margin-top: 10rem;
+    display: flex;
+    gap: 8rem;
+    justify-content: center;
+}
+
+.contenido-nosotros{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+
+.imagen-nosotros{
+    img{
+        width: 15rem;
+        height: 15rem;
+        border-radius: 50%;
+    }
+}

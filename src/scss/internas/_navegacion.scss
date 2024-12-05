@@ -1,0 +1,19 @@
+.navegacion-paginas{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5rem 50rem 5rem 50rem;
+
+    a{
+        color: $negro;
+        text-decoration: none;
+    }
+
+    .activado{
+        padding: 0.5rem 1.5rem;
+        border-radius: 10rem;
+        background-color: $verde;
+        color: $blanco;
+        font-weight: 900;
+    }
+}

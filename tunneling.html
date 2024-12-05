@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redes</title>
+    <link rel="stylesheet" href="build/css/app.css">
+</head>
+<body>
+    
+    <header class="header">
+        <div class="contenedor contenido-header">
+            <div class="barra">
+
+                <div class="derecha">
+                    <nav class="navegacion">
+                        <a href="index.html">Inicio</a>
+
+                        <a href="nosotros.html">Nosotros</a>
+                        <a href="blog.html">Blog</a>
+                    </nav>
+                </div>
+                
+            </div> <!--.barra-->
+        </div>
+    </header>
+
+    <main class="contenedor seccion contenido-centrado">
+        <h1>Establecimiento de un enlace seguro de red: Tunelización(Tunneling)</h1>
+
+   
+        <picture>
+            <source srcset="build/img/tunneling.webp" type="image/webp">
+            <source srcset="build/img/tunneling.jpg" type="image/jpeg">
+            <img loading="lazy" src="build/img/tunneling.jpg" alt="imagen de la propiedad">
+        </picture>
+
+        <div class="resumen-propiedad">
+            <p>El término de tunneling viene de
+                tunnel, que en español significa túnel,
+                en general, y sin hablar de redes ni
+                computadoras, un túnel es lo que se
+                conoce a una obra subterránea que
+                permite el paso de vehículos o
+                personas de un punto A o un punto B
+                de una forma que no se podría hacer
+                normalmente, el uso típico de un túnel
+                es para encontrar un camino corto</p>
+            <p>
+                En términos de redes y seguridad de
+                computadoras un túnel cumple una
+                función similar, ya que permite el envío de paquetes mediante protocolos que no son
+                compatibles con la red, por lo que de manera normal no se podría hacer el envío de dichos
+                paquetes.
+            </p>
+
+            <p>
+                En una red, los datos se mueven en paquetes, estos se dividen en 2 partes: encabezado que
+                contiene la dirección hacia donde va y el protocolo usado, y la información en sí. Cada
+                paquete tiene el protocolo que usa, sin embargo, no todas las redes permiten todos los
+                protocolos, de ahí radica la importancia del tunneling.
+            </p>
+            <p>
+                Un ejemplo de este problema ocurre cuando un edificio de oficinas A tiene una red WAN
+                que usa IPv6 y quiere comunicarse con un edificio B que utiliza IPv4. La comunicación no
+                podría realizarse directamente debido a que ambos edificios usan protocolos diferentes. El
+                tunneling permitiría encapsular el paquete IPv6 en uno IPv4, haciendo posible que la
+                comunicación sea compatible entre ambos edificios.
+            </p>
+            <p>
+                El tunneling es una tecnología que permite enviar datos en una red mediante otras
+                conexiones de la red, y funciona encapsulando el protocolo de red dentro de paquetes que
+                se transportan por la segunda red, esto también se le conoce como encapsulamiento.
+                (Alegsa, 2023).
+            </p>
+            <p>
+                En general, el túnel le permite al usuario de la red acceder a un servicio de red que su red
+                subyacente no soporta a través de encapsular su paquete de datos en otro paquete de
+                datos.
+            </p>
+        </div>
+    </main>
+
+    <div class="contenedor contendido-centrado">
+        <nav class="navegacion-paginas">
+            <a class="activado" href="tunneling.html">1</a>
+            <a href="ventajas-desventajas-tunneling.html">2</a>
+            <a href="funcionamiento-tunneling.html">3</a>
+            <a href="protocolos-tunneling.html">4</a>
+        </nav>
+    </div>
+
+    <footer class="footer">
+        <div class="contenedor contenedor-footer">
+            <nav class="navegacion">
+                <a href="index.html">Inicio</a>
+                <a href="nosotros.html">Nosotros</a>
+                <a href="blog.html">Blog</a>
+            </nav>
+        </div>
+
+    </footer>
+
+    <script src="build/js/bundle.min.js"></script>
+</body>
+</html>
